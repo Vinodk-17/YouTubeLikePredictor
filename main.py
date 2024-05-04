@@ -146,7 +146,7 @@ def fetch_model():
     # This part needs to be replaced with your actual model fetching code
     Y_test = data["likeCount"]
     p = np.array(Y_test).astype("float32")
-    p1 = p + randint(0, 10)
+    p1 = p + randint(5, 20)
 
     org = np.array(Y_test).astype("float32")
     err = ((p1 - org) / org) * 100.0
